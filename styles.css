@@ -1,0 +1,83 @@
+/* Christmas Style */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f3f3;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+}
+
+.christmas-header {
+    background-color: #e74c3c;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid #c0392b;
+}
+
+.christmas-header h1 {
+    font-family: 'Verdana', sans-serif;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.christmas-header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Cards container */
+.cards-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ecf0f1;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.05);
+    background-color: #f39c12;
+}
+
+li:before {
+    content: "🎁";
+    padding-right: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #16a085;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Additional decoration */
+body {
+    background-image: url('https://www.example.com/christmas-background.jpg'); /* Example background image */
+    background-size: cover;
+    background-position: center;
+}
