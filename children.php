@@ -34,13 +34,21 @@
             
             foreach ($letters as $letter) {
                 if ($child['id'] == $letter['sender_id']) {
+
+                    
                     foreach($gifts as $gift){
                         $giftName = $gift['name'];
-                        echo $giftName;
-                        $letter = str_ireplace($gift, "<b>" . $giftName . "</b>", $letter);
+                        
+                        $letter['letter_text'] = str_ireplace($gift, "<strong>" . $giftName . "</strong>", $letter['letter_text']);
+                        
+                        if (str_contains(strtolower($letter['letter_text']), strtolower($giftName))) {
+                            echo " <strong>" . htmlspecialchars($giftName) . "</strong><br>";
+                        }
+                        
+                        
                     }
                     
-                    echo "<p>" . nl2br(htmlspecialchars($letter['letter_text'])) . "</p>";
+                    echo "<p>" . nl2br($letter['letter_text']) . "</p>";
                     
                 }
                 
